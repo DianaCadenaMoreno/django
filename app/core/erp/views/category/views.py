@@ -50,7 +50,7 @@ class CategoryCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Cr
     model = Category
     form_class = CategoryForm
     template_name = 'category/create.html'
-    success_url = reverse_lazy('category_list')
+    success_url = reverse_lazy('erp:category_list')
     permission_required = 'add_category'
     url_redirect = success_url
 
