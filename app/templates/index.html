@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1> 
+            {% if categories%}
+            Si hay datos 
+            {% else %}
+            No hay datos 
+            {% endif %}
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sección Principal</h2>
+            <p>Este es el contenido principal de tu página.</p>
+        </section>
+
+        <section>
+            <h2>Otra Sección</h2>
+            <p>Más contenido aquí.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link a tu archivo JavaScript -->
+</body>
+</html>
